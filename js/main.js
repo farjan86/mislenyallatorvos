@@ -15,7 +15,7 @@
   });
 })();
 
-// A mai nap kiemelése a nyitvatartási kártyán
+// A mai nap kiemelése a nyitvatartási táblázatban + hero fotóchip
 (function () {
   var day = new Date().getDay(); // 0 = vasárnap
   var rows = document.querySelectorAll('.hours-table tr[data-day]');
@@ -25,6 +25,20 @@
       row.classList.add('today');
     }
   });
+
+  var chip = document.getElementById('today-chip');
+  if (chip) {
+    var texts = {
+      0: 'Ma ügyelet · Pécs, 8–20',
+      1: 'Ma nyitva · 9–11 és 16–18',
+      2: 'Ma nyitva · 16–18',
+      3: 'Ma nyitva · 9–11 és 16–18',
+      4: 'Ma nyitva · 16–18',
+      5: 'Ma nyitva · 16–18',
+      6: 'Ma ügyelet · Pécs, 8–20'
+    };
+    chip.textContent = texts[day];
+  }
 })();
 
 // Finom megjelenés görgetésre
