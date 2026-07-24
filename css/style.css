@@ -248,17 +248,14 @@ h3 { font-size: 1.22rem; }
 }
 .hero-photo img {
   width: 100%;
-  height: clamp(340px, 44vw, 500px);
+  height: clamp(260px, 30vw, 340px);
   object-fit: cover;
   object-position: 62% 68%;
 }
 
 /* A szignatúra elem: nyitvatartási kártya, a mai nap kiemelve */
 .hours-card {
-  position: absolute;
-  left: clamp(-40px, -4vw, -16px);
-  bottom: -36px;
-  width: min(310px, 86%);
+  margin-top: 18px;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -586,7 +583,6 @@ h3 { font-size: 1.22rem; }
     grid-template-columns: 1fr;
   }
   .hero-visual { margin-top: 12px; }
-  .hours-card { position: static; width: 100%; margin-top: 18px; }
   .about-photo { order: -1; }
   .related ul { columns: 1; }
 }
