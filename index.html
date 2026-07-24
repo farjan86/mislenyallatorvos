@@ -9,20 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232E5F41'/%3E%3Cg fill='%23FFFFFF'%3E%3Cellipse cx='11' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='21' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='6.8' cy='17' rx='2' ry='2.7'/%3E%3Cellipse cx='25.2' cy='17' rx='2' ry='2.7'/%3E%3Cpath d='M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23B15A2A'/%3E%3Cg fill='%23FBF7F0'%3E%3Cellipse cx='11' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='21' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='6.8' cy='17' rx='2' ry='2.7'/%3E%3Cellipse cx='25.2' cy='17' rx='2' ry='2.7'/%3E%3Cpath d='M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z'/%3E%3C/g%3E%3C/svg%3E">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "VeterinaryCare",
     "name": "Kozármislenyi Állatorvosi Rendelő",
     "founder": "Dr. Hegyi Orsolya",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Orgona u. 7.",
-      "addressLocality": "Kozármisleny",
-      "postalCode": "7761",
-      "addressCountry": "HU"
-    },
+    "address": { "@type": "PostalAddress", "streetAddress": "Orgona u. 7.", "addressLocality": "Kozármisleny", "postalCode": "7761", "addressCountry": "HU" },
     "telephone": "+36303011789",
     "email": "mislenyiallatorvos@gmail.com",
     "openingHours": ["Mo 09:00-11:00", "Mo 16:00-18:00", "Tu 16:00-18:00", "We 09:00-11:00", "We 16:00-18:00", "Th 16:00-18:00", "Fr 16:00-18:00"]
@@ -31,261 +25,297 @@
 </head>
 <body>
 
-  <div class="duty-strip">
+  <div class="duty">
     <div class="wrap">
-      <span>Hétvégén és ünnepnapokon: pécsi állatorvosi ügyelet 8–20 óráig</span>
+      <span><b>Ügyelet:</b> hétvégén és ünnepnapokon a pécsi állatorvosi ügyelet hívható 8–20 óráig.</span>
       <a href="tel:+36309705419">+36 30 970 5419</a>
     </div>
   </div>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#fooldal">
-        <svg viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" fill="#2E5F41"/>
-          <g fill="#FFFFFF">
-            <ellipse cx="11" cy="12" rx="2.4" ry="3.2"/>
-            <ellipse cx="21" cy="12" rx="2.4" ry="3.2"/>
-            <ellipse cx="6.8" cy="17" rx="2" ry="2.7"/>
-            <ellipse cx="25.2" cy="17" rx="2" ry="2.7"/>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Kezdőlap">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#B15A2A"/>
+          <g fill="#FBF7F0">
+            <ellipse cx="11" cy="12" rx="2.4" ry="3.2"/><ellipse cx="21" cy="12" rx="2.4" ry="3.2"/>
+            <ellipse cx="6.8" cy="17" rx="2" ry="2.7"/><ellipse cx="25.2" cy="17" rx="2" ry="2.7"/>
             <path d="M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z"/>
           </g>
         </svg>
-        <span class="brand-name">
-          Mislenyi Állatorvos
-          <small>Kozármisleny · Dr. Hegyi Orsolya</small>
-        </span>
+        <span class="bt">Mislenyi Állatorvos<small>Kozármisleny · Dr. Hegyi Orsolya</small></span>
       </a>
-      <nav class="main-nav" id="main-nav" aria-label="Fő navigáció">
+      <nav class="nav-links" id="nav-links" aria-label="Fő navigáció">
         <a href="#bemutatkozas">Bemutatkozás</a>
+        <a href="#ellatas">Ellátás</a>
         <a href="#szolgaltatasok">Szolgáltatások</a>
-        <a href="#alternativ">Alternatív gyógyászat</a>
         <a href="#tudnivalok">Tudnivalók</a>
         <a href="#kapcsolat">Kapcsolat</a>
+        <a class="btn btn-fire nav-cta" href="tel:+36303011789">Időpontot kérek</a>
       </nav>
-      <a class="btn btn-primary header-cta" href="tel:+36303011789">Időpontot kérek</a>
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü megnyitása">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <button class="burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <main id="fooldal">
+  <main id="top">
 
     <!-- HERO -->
     <section class="hero">
-      <div class="wrap">
+      <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Kozármisleny · Kisállatrendelő 2008 óta</p>
-          <h1>Állatorvosi<br><span class="accent-i">Rendelő</span></h1>
-          <p class="sub-serif">Gondoskodás, ahogy kedvence megérdemli.</p>
-          <p class="lead">Kisállatrendelő Kozármislenyben, ahol a nyugati orvoslás pontossága és a kiegészítő terápiák szemlélete együtt szolgálja kutyája, macskája egészségét.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+36303011789">Időpontot kérek <span class="arrow">→</span></a>
-            <a class="btn btn-ghost" href="#szolgaltatasok">Szolgáltatások felfedezése</a>
+          <div class="inner">
+            <span class="eyebrow">Kozármisleny · Kisállatrendelő 2008 óta</span>
+            <h1><span class="k">Kedvence</span><span class="a">jó kezekben.</span></h1>
+            <div class="rule"></div>
+            <p class="tagline">Nyugati orvoslás, holisztikus szemlélettel.</p>
+            <p class="lead">Kisállatrendelő Kozármislenyben, ahol minden pácienst ismerünk, és a gazdikkal közösen döntünk kedvencük egészségéről – a megelőzéstől a műtétig.</p>
+            <div class="hero-cta">
+              <a class="btn btn-fire" href="tel:+36303011789">Időpontot kérek <span class="arr">→</span></a>
+              <a class="btn btn-line" href="#szolgaltatasok">Szolgáltatások</a>
+            </div>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="img/hero-dog.jpg" alt="Kutya és macska egymáshoz bújva a fűben" fetchpriority="high">
-          <span class="photo-chip" id="today-chip">Rendelő · Kozármisleny</span>
+        <div class="hero-photo">
+          <img src="img/care-dog.jpg" alt="Aranyfényben szaladó golden retriever kölyök" fetchpriority="high">
+          <span class="badge" id="today-badge"><span class="dot"></span>Rendelő · Kozármisleny</span>
         </div>
       </div>
     </section>
 
-    <!-- FILOZÓFIA -->
-    <section class="philosophy" id="bemutatkozas">
+    <!-- BEMUTATKOZÁS + STATOK -->
+    <section class="philo sec" id="bemutatkozas">
       <div class="wrap">
-        <div class="reveal">
-          <p class="eyebrow">Bemutatkozás</p>
-          <h2>A gyógyítás akkor jó, ha <span class="accent-i">személyes</span>.</h2>
+        <div class="philo-grid">
+          <div class="reveal">
+            <span class="eyebrow">Bemutatkozás</span>
+            <h2 style="margin-top:16px">A gyógyítás akkor jó,<br>ha <em>személyes</em>.</h2>
+          </div>
+          <div class="body reveal">
+            <p>Dr. Hegyi Orsolya vagyok, állatorvos. 2003-ban végeztem a budapesti Állatorvostudományi Egyetemen, diplomám megszerzése után Pécsett dolgoztam több kisállatrendelőben. Saját praxisomat 2008 júliusában nyitottam meg Kozármislenyben.</p>
+            <p>Ez nem futószalagos klinika: minden pácienst ismerek, és a gazdikkal közösen keressük a legjobb megoldást. A nyugati orvoslás mellett a kiegészítő és alternatív terápiákban is szakállatorvosi képzettséget szereztem.</p>
+            <p class="accent">„Szabadidőmet legszívesebben a természetben töltöm – lóháton vagy gyalogosan."</p>
+          </div>
         </div>
-        <div class="reveal">
-          <p>Dr. Hegyi Orsolya vagyok, állatorvos. 2003-ban végeztem a budapesti Állatorvostudományi Egyetemen, diplomám megszerzése után Pécsett dolgoztam több kisállatrendelőben. Saját praxisomat 2008 júliusában nyitottam meg Kozármislenyben.</p>
-          <p>Ez nem futószalagos klinika: minden pácienst ismerek, és a gazdikkal közösen döntünk kedvencük kezeléséről. A nyugati orvoslás mellett a kiegészítő és alternatív terápiás módszerekben is szakállatorvosi képzettséget szereztem.</p>
-          <blockquote class="pull">
-            „Szabadidőmet legszívesebben a természetben töltöm – lóháton vagy gyalogosan."
-            <footer>Dr. Hegyi Orsolya · állatorvos</footer>
-          </blockquote>
+        <div class="stats reveal">
+          <div class="stat"><b>17+ év</b><span>saját praxis</span></div>
+          <div class="stat"><b>2003</b><span>állatorvosi diploma · ÁTE</span></div>
+          <div class="stat"><b>2025</b><span>alternatív szakállatorvos</span></div>
+          <div class="stat"><b>6</b><span>kiegészítő gyógymód</span></div>
+          <div class="stat"><b>Kutya · Macska</b><span>és egyéb kisállatok</span></div>
         </div>
       </div>
     </section>
 
-    <!-- STATISZTIKA -->
-    <div class="stat-strip">
+    <!-- ELLÁTÁSI TERÜLETEK (képes kártyák) -->
+    <section class="sec" id="ellatas">
       <div class="wrap">
-        <div class="stat"><b>17+ év</b><span>saját praxis</span></div>
-        <div class="stat"><b>2003</b><span>állatorvosi diploma · ÁTE</span></div>
-        <div class="stat"><b>2025</b><span>alternatív szakállatorvos</span></div>
-        <div class="stat"><b>6</b><span>kiegészítő gyógymód</span></div>
-        <div class="stat"><b>Orgona u. 7.</b><span>Kozármisleny</span></div>
+        <div class="sec-head reveal">
+          <span class="eyebrow">Akikkel foglalkozom</span>
+          <h2>Ismerős kezek minden <em>tappancsnak</em>.</h2>
+          <p>Kutya, macska vagy kisebb kedvenc – mindegyik más odafigyelést kíván. Nézze meg, mire számíthat.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-img">
+              <img src="img/puppy.jpg" alt="Mosolygó beagle a szabadban" loading="lazy">
+              <span class="num">01</span>
+              <span class="status">Kutyák</span>
+            </div>
+            <div class="card-body">
+              <h3>Kutyák ellátása</h3>
+              <p class="sub">Kölyökkortól az időskorig</p>
+              <p class="desc">A teljes életúton át: oltási terv, egészségügyi szűrés, kezelés és tanácsadás.</p>
+              <ul>
+                <li>Kombinált és veszettség elleni oltások</li>
+                <li>Belgyógyászati kivizsgálás</li>
+                <li>Bőr- és fülproblémák kezelése</li>
+                <li>Sebészet és ivartalanítás</li>
+              </ul>
+              <div class="card-foot">
+                <span class="tag">Időpontegyeztetéssel</span>
+                <a class="pick" href="tel:+36303011789">Időpont <span class="arr">→</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img">
+              <img src="img/care-cat.jpg" alt="Vörös bundás macska otthoni fényben" loading="lazy">
+              <span class="num">02</span>
+              <span class="status">Macskák</span>
+            </div>
+            <div class="card-body">
+              <h3>Macskák ellátása</h3>
+              <p class="sub">Lakásban és kijáró cicáknak</p>
+              <p class="desc">Külön oltási terv és kíméletes vizsgálat a stresszérzékeny macskáknak.</p>
+              <ul>
+                <li>Panleukopénia, herpesz-, calicivírus</li>
+                <li>Leukózis- és veszettségvédelem</li>
+                <li>Mikrochip és állatútlevél</li>
+                <li>Ivartalanítás biztonságos altatásban</li>
+              </ul>
+              <div class="card-foot">
+                <span class="tag">Időpontegyeztetéssel</span>
+                <a class="pick" href="tel:+36303011789">Időpont <span class="arr">→</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img">
+              <img src="img/rabbit.jpg" alt="Fehér házinyúl a kertben" loading="lazy">
+              <span class="num">03</span>
+              <span class="status">Kisállatok</span>
+            </div>
+            <div class="card-body">
+              <h3>Egyéb kisállatok</h3>
+              <p class="sub">Nyúl, görény és társaik</p>
+              <p class="desc">A kisemlősök is szakértő kezet igényelnek – vizsgálat és tanácsadás fajra szabva.</p>
+              <ul>
+                <li>Fajspecifikus egészségügyi tanácsadás</li>
+                <li>Paraziták elleni védekezés</li>
+                <li>Ambuláns betegellátás</li>
+                <li>Alternatív terápiás lehetőségek</li>
+              </ul>
+              <div class="card-foot">
+                <span class="tag">Időpontegyeztetéssel</span>
+                <a class="pick" href="tel:+36303011789">Időpont <span class="arr">→</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- SZOLGÁLTATÁSOK -->
-    <section class="section" id="szolgaltatasok">
+    <!-- SZOLGÁLTATÁSOK (hajszálvonalas rács) -->
+    <section class="svc sec" id="szolgaltatasok" style="background:var(--paper-warm)">
       <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Szolgáltatások</p>
-          <h2>Minden, amire kedvencének <span class="accent-i">szüksége lehet</span>.</h2>
-          <p>A megelőzéstől a műtéti beavatkozásokig – egy helyen, ismerős környezetben. Időpontegyeztetés szükséges.</p>
+        <div class="sec-head reveal">
+          <span class="eyebrow">Szolgáltatások</span>
+          <h2>Minden egy helyen, <em>ismerős környezetben</em>.</h2>
+          <p>A megelőzéstől a műtéti beavatkozásokig. Minden ellátáshoz időpontegyeztetés szükséges.</p>
         </div>
         <div class="svc-grid reveal">
-          <div class="svc-cell">
-            <span class="num">01 · Megelőzés</span>
-            <h3>Védőoltások</h3>
-            <p>Kötelező és ajánlott vakcinák kutyáknak, macskáknak – oltási terv kölyökkortól.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">02 · Diagnosztika</span>
-            <h3>Belgyógyászat</h3>
-            <p>Általános kivizsgálás, betegségek diagnosztikája és kezelése.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">03 · Bőr és fül</span>
-            <h3>Bőrgyógyászat</h3>
-            <p>Allergiák, viszketés, fül- és bőrproblémák felderítése és kezelése.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">04 · Műtét</span>
-            <h3>Sebészet, ivartalanítás</h3>
-            <p>Rutin- és lágyszöveti műtétek, ivartalanítás biztonságos altatásban.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">05 · Azonosítás</span>
-            <h3>Mikrochip-beültetés</h3>
-            <p>Kötelező jelölés és regisztráció gyorsan, fájdalommentesen.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">06 · Utazás</span>
-            <h3>Állatútlevél</h3>
-            <p>Uniós kisállat-útlevél kiállítása külföldi utazáshoz.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">07 · Ellátás</span>
-            <h3>Ambuláns betegellátás</h3>
-            <p>Vizsgálat, kezelés és utógondozás rendelői körülmények között.</p>
-          </div>
-          <div class="svc-cell">
-            <span class="num">08 · Kiegészítő</span>
-            <h3>Alternatív terápiák</h3>
-            <p>Akupunktúra, fitoterápia és további kiegészítő gyógymódok.</p>
-          </div>
+          <div class="svc-item"><span class="t">01 · Megelőzés</span><h4>Védőoltások</h4><p>Kötelező és ajánlott vakcinák kutyáknak, macskáknak.</p></div>
+          <div class="svc-item"><span class="t">02 · Diagnosztika</span><h4>Belgyógyászat</h4><p>Általános kivizsgálás, betegségek felismerése és kezelése.</p></div>
+          <div class="svc-item"><span class="t">03 · Bőr és fül</span><h4>Bőrgyógyászat</h4><p>Allergiák, viszketés, fül- és bőrproblémák kezelése.</p></div>
+          <div class="svc-item"><span class="t">04 · Műtét</span><h4>Sebészet</h4><p>Rutin- és lágyszöveti műtétek, ivartalanítás altatásban.</p></div>
+          <div class="svc-item"><span class="t">05 · Azonosítás</span><h4>Mikrochip</h4><p>Kötelező jelölés és regisztráció fájdalommentesen.</p></div>
+          <div class="svc-item"><span class="t">06 · Utazás</span><h4>Állatútlevél</h4><p>Uniós kisállat-útlevél kiállítása külföldi úthoz.</p></div>
+          <div class="svc-item"><span class="t">07 · Ellátás</span><h4>Ambuláns ellátás</h4><p>Vizsgálat, kezelés és utógondozás a rendelőben.</p></div>
+          <div class="svc-item"><span class="t">08 · Kiegészítő</span><h4>Alternatív terápiák</h4><p>Akupunktúra, fitoterápia és további gyógymódok.</p></div>
         </div>
       </div>
     </section>
 
     <!-- ALTERNATÍV GYÓGYÁSZAT -->
-    <section class="alt-band" id="alternativ">
+    <section class="alt sec" id="alternativ">
       <div class="wrap">
-        <figure class="alt-photo reveal">
-          <img src="img/horse.jpg" alt="Fehér ló vágtat a sötétzöld erdő előtt" loading="lazy" width="1600" height="1067">
-          <figcaption>A természet a legjobb rendelő</figcaption>
-        </figure>
-        <div class="reveal">
-          <p class="eyebrow">Alternatív állatgyógyászat</p>
-          <h2>Nyugati orvoslás, <span class="accent-i">keleti szemlélet</span>.</h2>
-          <p>2023 és 2025 között elvégeztem az Állatorvostudományi Egyetem kiegészítő és alternatív módszerek szakállatorvos képzését. Így ma már a klasszikus gyógymódok mellett a hagyományos kínai orvoslás eszköztárát is alkalmazom a mindennapi munkám során.</p>
-          <p>Ha nyitottak ezekre a módszerekre, vagy a nyugati orvoslás már elérte határait kedvencük betegségének kezelésében, forduljanak hozzám bizalommal.</p>
-          <ul class="method-list">
-            <li><span class="num">01</span><span class="name">Akupunktúra</span><span class="desc">a hagyományos kínai orvoslás tűterápiája</span></li>
-            <li><span class="num">02</span><span class="name">Fitoterápia</span><span class="desc">gyógynövényekre épülő kezelések</span></li>
-            <li><span class="num">03</span><span class="name">Homeopátia</span><span class="desc">kiegészítő ingerterápia</span></li>
-            <li><span class="num">04</span><span class="name">Viselkedésterápia</span><span class="desc">szorongás, agresszió, rossz szokások</span></li>
-            <li><span class="num">05</span><span class="name">Fizioterápia</span><span class="desc">mozgásszervi rehabilitáció</span></li>
-            <li><span class="num">06</span><span class="name">Manuálterápia</span><span class="desc">ízületek és izmok kézzel végzett kezelése</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- TUDNIVALÓK -->
-    <section class="section" id="tudnivalok">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Hasznos tudnivalók</p>
-          <h2>Tanácsok felelős <span class="accent-i">gazdiknak</span>.</h2>
-          <p>Rövid, közérthető írások a leggyakoribb kérdésekről – mert a megelőzés mindig egyszerűbb, mint a gyógyítás.</p>
-        </div>
-        <div class="info-grid">
-          <a class="info-card reveal" href="cikkek/mikor-forduljunk-allatorvoshoz.html">
-            <span class="meta"><span class="num">01</span><span class="tag">Első lépés</span></span>
-            <h3>Mikor forduljunk állatorvoshoz?</h3>
-            <p>A korán felismert betegség egyszerűbben és nagyobb eséllyel gyógyítható – ezekre a jelekre figyeljen.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/vedooltasok-kutyaknak.html">
-            <span class="meta"><span class="num">02</span><span class="tag">Kutya</span></span>
-            <h3>Védőoltások kutyáknak</h3>
-            <p>Veszettség, parvo, szopornyica és társaik – javasolt oltási sor kölyökkortól felnőttkorig.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/vedooltasok-macskaknak.html">
-            <span class="meta"><span class="num">03</span><span class="tag">Macska</span></span>
-            <h3>Védőoltások macskáknak</h3>
-            <p>Külön oltási terv lakásban tartott és kijáró cicáknak – mit, mikor és miért érdemes beadatni.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/kullancsok.html">
-            <span class="meta"><span class="num">04</span><span class="tag">Paraziták</span></span>
-            <h3>Kullancsok</h3>
-            <p>Babesiosis, Lyme-kór és társaik – miért életveszélyes egy apró vérszívó, és hogyan védekezzünk.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/bolhassag.html">
-            <span class="meta"><span class="num">05</span><span class="tag">Paraziták</span></span>
-            <h3>Bolhásság</h3>
-            <p>Egyetlen csípés is elég a bolhaekcémához – a hatékony védekezés szabályai kedvencnek és otthonnak.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/fergesseg.html">
-            <span class="meta"><span class="num">06</span><span class="tag">Paraziták</span></span>
-            <h3>Férgesség</h3>
-            <p>A férges állat legtöbbször tünetmentes, mégis fertőzhet – embert is. A negyedéves féreghajtás szerepe.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/allergia.html">
-            <span class="meta"><span class="num">07</span><span class="tag">Bőrgyógyászat</span></span>
-            <h3>Allergia kutyáknál</h3>
-            <p>Vakarózás, fülgyulladás, bőrpír? Az allergia típusai, felismerése és kezelési lehetőségei.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/ivartalanitas.html">
-            <span class="meta"><span class="num">08</span><span class="tag">Megelőzés</span></span>
-            <h3>Ivartalanítás</h3>
-            <p>Miért él egészségesebben és tovább az ivartalanított állat – előnyök a kedvenc és a gazdi oldaláról.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
-          <a class="info-card reveal" href="cikkek/tevhitek-az-ivartalanitasrol.html">
-            <span class="meta"><span class="num">09</span><span class="tag">Megelőzés</span></span>
-            <h3>Tévhitek az ivartalanításról</h3>
-            <p>„Egyszer elletni kell", „el fog hízni", „megváltozik" – a leggyakoribb tévhitek és a valóság.</p>
-            <span class="more">Elolvasom →</span>
-          </a>
+        <div class="alt-grid">
+          <figure class="alt-photo reveal" style="margin:0">
+            <img src="img/horse.jpg" alt="Fehér ló vágtat a sötétzöld erdő előtt">
+            <figcaption class="cap">A természet a legjobb rendelő</figcaption>
+          </figure>
+          <div class="reveal">
+            <span class="eyebrow">Alternatív állatgyógyászat</span>
+            <h2>Nyugati orvoslás,<br><em>keleti szemlélet</em>.</h2>
+            <p class="intro">2023 és 2025 között elvégeztem az Állatorvostudományi Egyetem kiegészítő és alternatív módszerek szakállatorvos képzését. Ha nyitottak ezekre a módszerekre, vagy a nyugati orvoslás már elérte határait, forduljanak hozzám bizalommal.</p>
+            <div class="pts">
+              <div class="pt"><span class="n">01</span><div><h4>Akupunktúra &amp; fitoterápia</h4><p>A hagyományos kínai orvoslás tűterápiája és gyógynövényes kezelései.</p></div></div>
+              <div class="pt"><span class="n">02</span><div><h4>Homeopátia &amp; viselkedésterápia</h4><p>Kiegészítő ingerterápia, valamint szorongás és rossz szokások kezelése.</p></div></div>
+              <div class="pt"><span class="n">03</span><div><h4>Fizioterápia &amp; manuálterápia</h4><p>Mozgásszervi rehabilitáció, ízületek és izmok kézzel végzett kezelése.</p></div></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- IDÉZET -->
-    <section class="quote-band">
+    <section class="quoteband sec">
       <div class="wrap reveal">
-        <blockquote>
-          „Az állat nem tudja elmondani a panaszait – a gazdinak és az állatorvosnak közösen kell tisztáznia azokat. Ezért nálam minden vizsgálat beszélgetéssel kezdődik."
-        </blockquote>
-        <footer>Dr. Hegyi Orsolya · állatorvos</footer>
+        <blockquote>„Az állat nem tudja elmondani a panaszait – a gazdinak és az állatorvosnak közösen kell tisztáznia azokat. Ezért nálam minden vizsgálat beszélgetéssel kezdődik."</blockquote>
+        <p class="by">Dr. Hegyi Orsolya · állatorvos</p>
+      </div>
+    </section>
+
+    <!-- TUDNIVALÓK -->
+    <section class="kb sec" id="tudnivalok">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Hasznos tudnivalók</span>
+          <h2>Tanácsok felelős <em>gazdiknak</em>.</h2>
+          <p>Rövid, közérthető írások a leggyakoribb kérdésekről – mert a megelőzés mindig egyszerűbb, mint a gyógyítás.</p>
+        </div>
+        <div class="kb-grid">
+          <a class="kb-card reveal" href="cikkek/mikor-forduljunk-allatorvoshoz.html">
+            <span class="meta"><span class="n">01</span><span class="t">Első lépés</span></span>
+            <h3>Mikor forduljunk állatorvoshoz?</h3>
+            <p>A korán felismert betegség egyszerűbben és nagyobb eséllyel gyógyítható – ezekre a jelekre figyeljen.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/vedooltasok-kutyaknak.html">
+            <span class="meta"><span class="n">02</span><span class="t">Kutya</span></span>
+            <h3>Védőoltások kutyáknak</h3>
+            <p>Veszettség, parvo, szopornyica és társaik – javasolt oltási sor kölyökkortól felnőttkorig.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/vedooltasok-macskaknak.html">
+            <span class="meta"><span class="n">03</span><span class="t">Macska</span></span>
+            <h3>Védőoltások macskáknak</h3>
+            <p>Külön oltási terv lakásban tartott és kijáró cicáknak – mit, mikor és miért érdemes beadatni.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/kullancsok.html">
+            <span class="meta"><span class="n">04</span><span class="t">Paraziták</span></span>
+            <h3>Kullancsok</h3>
+            <p>Babesiosis, Lyme-kór és társaik – miért életveszélyes egy apró vérszívó, és hogyan védekezzünk.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/bolhassag.html">
+            <span class="meta"><span class="n">05</span><span class="t">Paraziták</span></span>
+            <h3>Bolhásság</h3>
+            <p>Egyetlen csípés is elég a bolhaekcémához – a hatékony védekezés szabályai kedvencnek és otthonnak.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/fergesseg.html">
+            <span class="meta"><span class="n">06</span><span class="t">Paraziták</span></span>
+            <h3>Férgesség</h3>
+            <p>A férges állat legtöbbször tünetmentes, mégis fertőzhet – embert is. A negyedéves féreghajtás szerepe.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/allergia.html">
+            <span class="meta"><span class="n">07</span><span class="t">Bőrgyógyászat</span></span>
+            <h3>Allergia kutyáknál</h3>
+            <p>Vakarózás, fülgyulladás, bőrpír? Az allergia típusai, felismerése és kezelési lehetőségei.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/ivartalanitas.html">
+            <span class="meta"><span class="n">08</span><span class="t">Megelőzés</span></span>
+            <h3>Ivartalanítás</h3>
+            <p>Miért él egészségesebben és tovább az ivartalanított állat – előnyök a kedvenc és a gazdi oldaláról.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+          <a class="kb-card reveal" href="cikkek/tevhitek-az-ivartalanitasrol.html">
+            <span class="meta"><span class="n">09</span><span class="t">Megelőzés</span></span>
+            <h3>Tévhitek az ivartalanításról</h3>
+            <p>„Egyszer elletni kell", „el fog hízni", „megváltozik" – a leggyakoribb tévhitek és a valóság.</p>
+            <span class="more">Elolvasom <span class="arr">→</span></span>
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- KAPCSOLAT -->
-    <section class="contact section" id="kapcsolat">
+    <section class="contact sec" id="kapcsolat">
       <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Kapcsolat</p>
-          <h2>Várjuk <span class="accent-i">szeretettel</span>.</h2>
+        <div class="sec-head reveal">
+          <span class="eyebrow">Kapcsolat</span>
+          <h2>Várjuk <em>szeretettel</em>.</h2>
         </div>
-        <div class="inner">
-          <div class="hours-card reveal" aria-label="Rendelési idő">
-            <h3>Rendelési idő</h3>
-            <table class="hours-table">
+        <div class="contact-grid">
+          <div class="reveal">
+            <h3 class="blk">Rendelési idő</h3>
+            <table class="hours">
               <tr data-day="1"><td>Hétfő</td><td>9–11 · 16–18</td></tr>
               <tr data-day="2"><td>Kedd</td><td>16–18</td></tr>
               <tr data-day="3"><td>Szerda</td><td>9–11 · 16–18</td></tr>
@@ -294,65 +324,70 @@
               <tr data-day="6"><td>Szombat – Vasárnap</td><td class="closed">ügyelet</td></tr>
             </table>
             <p class="hours-note">Kérjük, érkezés előtt egyeztessen időpontot telefonon.</p>
-            <div class="duty-note">
-              <strong>Ügyelet:</strong> hétvégén és ünnepnapokon a pécsi állatorvosi ügyelet hívható 8–20 óráig a <a href="tel:+36309705419">+36 30 970 5419</a> számon.
-            </div>
+            <div class="duty-note"><b>Ügyelet:</b> hétvégén és ünnepnapokon a pécsi állatorvosi ügyelet hívható 8–20 óráig a <a href="tel:+36309705419">+36 30 970 5419</a> számon.</div>
           </div>
-          <div class="contact-col reveal">
-            <h3>Elérhetőségek</h3>
-            <div class="contact-item">
-              <span class="label">Cím</span>
-              <span>7761 Kozármisleny, Orgona u. 7.</span>
-            </div>
-            <div class="contact-item">
-              <span class="label">Telefon</span>
-              <span><a href="tel:+36303011789">+36 30 30 11 789</a><br><a href="tel:+3672371571">+36 72 371 571</a></span>
-            </div>
-            <div class="contact-item">
-              <span class="label">E-mail</span>
-              <span><a href="mailto:mislenyiallatorvos@gmail.com">mislenyiallatorvos@gmail.com</a></span>
-            </div>
-            <div class="contact-item">
-              <span class="label">Rendelő</span>
-              <span>Kozármislenyi Állatorvosi Rendelő<br>Dr. Hegyi Orsolya · praxisengedély: 1674-PE/MAOK</span>
+          <div class="reveal">
+            <h3 class="blk">Elérhetőségek</h3>
+            <div class="cinfo">
+              <div class="row"><span class="lbl">Cím</span><span>7761 Kozármisleny, Orgona u. 7.</span></div>
+              <div class="row"><span class="lbl">Telefon</span><span><a href="tel:+36303011789">+36 30 30 11 789</a><br><a href="tel:+3672371571">+36 72 371 571</a></span></div>
+              <div class="row"><span class="lbl">E-mail</span><span><a href="mailto:mislenyiallatorvos@gmail.com">mislenyiallatorvos@gmail.com</a></span></div>
+              <div class="row"><span class="lbl">Rendelő</span><span>Kozármislenyi Állatorvosi Rendelő<br>Dr. Hegyi Orsolya · praxisengedély: 1674-PE/MAOK</span></div>
             </div>
           </div>
         </div>
-        <div class="map-frame reveal">
-          <iframe
-            src="https://www.google.com/maps?q=7761%20Koz%C3%A1rmisleny%2C%20Orgona%20u.%207&output=embed"
-            title="Térkép – Kozármislenyi Állatorvosi Rendelő"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
+        <div class="map reveal">
+          <iframe src="https://www.google.com/maps?q=7761%20Koz%C3%A1rmisleny%2C%20Orgona%20u.%207&output=embed" title="Térkép – Kozármislenyi Állatorvosi Rendelő" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-band">
+    <!-- ZÁRÓ CTA -->
+    <section class="closing">
       <div class="wrap">
-        <h2>Kedvence egészsége <span class="accent-i">nem várhat</span>.</h2>
-        <p>Hívjon minket rendelési időben, és egyeztessünk időpontot – a megelőzés mindig egyszerűbb, mint a gyógyítás.</p>
-        <a class="btn btn-primary" href="tel:+36303011789">+36 30 30 11 789 <span class="arrow">→</span></a>
+        <p>Kedvence egészsége <em>nem várhat</em>.</p>
+        <a class="btn btn-fire" href="tel:+36303011789">+36 30 30 11 789 <span class="arr">→</span></a>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="wrap">
-      <div>
-        <strong>Kozármislenyi Állatorvosi Rendelő</strong><br>
-        Dr. Hegyi Orsolya · 7761 Kozármisleny, Orgona u. 7.
+      <div class="foot-grid">
+        <div class="foot-col">
+          <div class="foot-brand">
+            <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="4" fill="#B15A2A"/>
+              <g fill="#FBF7F0">
+                <ellipse cx="11" cy="12" rx="2.4" ry="3.2"/><ellipse cx="21" cy="12" rx="2.4" ry="3.2"/>
+                <ellipse cx="6.8" cy="17" rx="2" ry="2.7"/><ellipse cx="25.2" cy="17" rx="2" ry="2.7"/>
+                <path d="M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z"/>
+              </g>
+            </svg>
+            <span class="bt">Mislenyi Állatorvos</span>
+          </div>
+          <p>Kisállatrendelő Kozármislenyben 2008 óta. Dr. Hegyi Orsolya állatorvos – nyugati orvoslás holisztikus szemlélettel.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Oldalak</h4>
+          <a href="#bemutatkozas">Bemutatkozás</a>
+          <a href="#ellatas">Ellátás</a>
+          <a href="#szolgaltatasok">Szolgáltatások</a>
+          <a href="#tudnivalok">Tudnivalók</a>
+          <a href="adatvedelem.html">Adatvédelem</a>
+        </div>
+        <div class="foot-col">
+          <h4>Kapcsolat</h4>
+          <a href="tel:+36303011789">+36 30 30 11 789</a>
+          <a href="mailto:mislenyiallatorvos@gmail.com">mislenyiallatorvos@gmail.com</a>
+          <a href="https://www.google.com/maps?q=7761%20Koz%C3%A1rmisleny%2C%20Orgona%20u.%207" target="_blank" rel="noopener">7761 Kozármisleny, Orgona u. 7.</a>
+        </div>
       </div>
-      <nav class="footer-nav" aria-label="Lábléc navigáció">
-        <a href="#bemutatkozas">Bemutatkozás</a>
-        <a href="#szolgaltatasok">Szolgáltatások</a>
-        <a href="#tudnivalok">Tudnivalók</a>
-        <a href="adatvedelem.html">Adatvédelem</a>
-      </nav>
-      <span class="demo-badge">Weboldal-tervezet · demó</span>
+      <div class="foot-bottom">
+        <span>© 2026 Kozármislenyi Állatorvosi Rendelő</span>
+        <span class="demo-badge">Weboldal-tervezet · demó</span>
+      </div>
     </div>
   </footer>
 

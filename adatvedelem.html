@@ -10,44 +10,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232E5F41'/%3E%3Cg fill='%23FFFFFF'%3E%3Cellipse cx='11' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='21' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='6.8' cy='17' rx='2' ry='2.7'/%3E%3Cellipse cx='25.2' cy='17' rx='2' ry='2.7'/%3E%3Cpath d='M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23B15A2A'/%3E%3Cg fill='%23FBF7F0'%3E%3Cellipse cx='11' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='21' cy='12' rx='2.4' ry='3.2'/%3E%3Cellipse cx='6.8' cy='17' rx='2' ry='2.7'/%3E%3Cellipse cx='25.2' cy='17' rx='2' ry='2.7'/%3E%3Cpath d='M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z'/%3E%3C/g%3E%3C/svg%3E">
 </head>
 <body>
 
-  <header class="site-header">
+  <div class="duty">
     <div class="wrap">
-      <a class="brand" href="index.html">
-        <svg viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" fill="#2E5F41"/>
-          <g fill="#FFFFFF">
-            <ellipse cx="11" cy="12" rx="2.4" ry="3.2"/>
-            <ellipse cx="21" cy="12" rx="2.4" ry="3.2"/>
-            <ellipse cx="6.8" cy="17" rx="2" ry="2.7"/>
-            <ellipse cx="25.2" cy="17" rx="2" ry="2.7"/>
+      <span><b>Ügyelet:</b> hétvégén és ünnepnapokon a pécsi állatorvosi ügyelet hívható 8–20 óráig.</span>
+      <a href="tel:+36309705419">+36 30 970 5419</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Kezdőlap">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#B15A2A"/>
+          <g fill="#FBF7F0">
+            <ellipse cx="11" cy="12" rx="2.4" ry="3.2"/><ellipse cx="21" cy="12" rx="2.4" ry="3.2"/>
+            <ellipse cx="6.8" cy="17" rx="2" ry="2.7"/><ellipse cx="25.2" cy="17" rx="2" ry="2.7"/>
             <path d="M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z"/>
           </g>
         </svg>
-        <span class="brand-name">
-          Mislenyi Állatorvos
-          <small>Kozármisleny · Dr. Hegyi Orsolya</small>
-        </span>
+        <span class="bt">Mislenyi Állatorvos<small>Kozármisleny · Dr. Hegyi Orsolya</small></span>
       </a>
-      <nav class="main-nav" id="main-nav" aria-label="Fő navigáció">
+      <nav class="nav-links" id="nav-links" aria-label="Fő navigáció">
         <a href="index.html#bemutatkozas">Bemutatkozás</a>
+        <a href="index.html#ellatas">Ellátás</a>
         <a href="index.html#szolgaltatasok">Szolgáltatások</a>
         <a href="index.html#tudnivalok">Tudnivalók</a>
         <a href="index.html#kapcsolat">Kapcsolat</a>
+        <a class="btn btn-fire nav-cta" href="tel:+36303011789">Időpontot kérek</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü megnyitása">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+      <button class="burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main>
     <div class="article-hero">
       <div class="wrap">
-        <p class="eyebrow">Jogi információk</p>
+        <span class="eyebrow">Jogi információk</span>
         <h1>Adatkezelési tájékoztató</h1>
       </div>
     </div>
@@ -108,23 +110,46 @@
     </article>
 
     <div class="article-nav">
-      <a class="btn btn-ghost" href="index.html">← Vissza a főoldalra</a>
+      <a class="btn btn-line" href="index.html"><span class="arr">←</span> Vissza a főoldalra</a>
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="wrap">
-      <div>
-        <strong>Kozármislenyi Állatorvosi Rendelő</strong><br>
-        Dr. Hegyi Orsolya · 7761 Kozármisleny, Orgona u. 7.
+      <div class="foot-grid">
+        <div class="foot-col">
+          <div class="foot-brand">
+            <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="4" fill="#B15A2A"/>
+              <g fill="#FBF7F0">
+                <ellipse cx="11" cy="12" rx="2.4" ry="3.2"/><ellipse cx="21" cy="12" rx="2.4" ry="3.2"/>
+                <ellipse cx="6.8" cy="17" rx="2" ry="2.7"/><ellipse cx="25.2" cy="17" rx="2" ry="2.7"/>
+                <path d="M16 16.5c3.4 0 6.2 2.8 6.2 5.6 0 2-1.5 3.4-3.4 3.4-1.1 0-2-.4-2.8-.4s-1.7.4-2.8.4c-1.9 0-3.4-1.4-3.4-3.4 0-2.8 2.8-5.6 6.2-5.6z"/>
+              </g>
+            </svg>
+            <span class="bt">Mislenyi Állatorvos</span>
+          </div>
+          <p>Kisállatrendelő Kozármislenyben 2008 óta. Dr. Hegyi Orsolya állatorvos – nyugati orvoslás holisztikus szemlélettel.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Oldalak</h4>
+          <a href="index.html#bemutatkozas">Bemutatkozás</a>
+          <a href="index.html#ellatas">Ellátás</a>
+          <a href="index.html#szolgaltatasok">Szolgáltatások</a>
+          <a href="index.html#tudnivalok">Tudnivalók</a>
+          <a href="adatvedelem.html">Adatvédelem</a>
+        </div>
+        <div class="foot-col">
+          <h4>Kapcsolat</h4>
+          <a href="tel:+36303011789">+36 30 30 11 789</a>
+          <a href="mailto:mislenyiallatorvos@gmail.com">mislenyiallatorvos@gmail.com</a>
+          <a href="https://www.google.com/maps?q=7761%20Koz%C3%A1rmisleny%2C%20Orgona%20u.%207" target="_blank" rel="noopener">7761 Kozármisleny, Orgona u. 7.</a>
+        </div>
       </div>
-      <nav class="footer-nav" aria-label="Lábléc navigáció">
-        <a href="index.html#bemutatkozas">Bemutatkozás</a>
-        <a href="index.html#szolgaltatasok">Szolgáltatások</a>
-        <a href="index.html#tudnivalok">Tudnivalók</a>
-        <a href="adatvedelem.html">Adatvédelem</a>
-      </nav>
-      <span class="demo-badge">Weboldal-tervezet · demó</span>
+      <div class="foot-bottom">
+        <span>© 2026 Kozármislenyi Állatorvosi Rendelő</span>
+        <span class="demo-badge">Weboldal-tervezet · demó</span>
+      </div>
     </div>
   </footer>
 
