@@ -39,9 +39,16 @@ Teljesen statikus (HTML + CSS + minimális JavaScript), bármilyen tárhelyen é
 6. **A Google-ban gyengén szerepel.** Nincsenek mai keresőoptimalizálási alapok (mobilbarát jelzés, strukturált adatok, gyors betöltés), így az „állatorvos Kozármisleny / Pécs” keresésekben rosszabbul teljesít, mint teljesíthetne.
 7. **Egyetlen fotó sincs rajta.** Képek nélkül nehéz bizalmat és minőségérzetet kelteni.
 
+## Kapcsolati űrlap
+
+Az eredeti oldalon is volt egy üzenetküldő űrlap (Név / E-mail / Tárgy / Üzenet), online időpontfoglalás viszont **nem** – ezt itt is így hagytuk. A kapcsolati űrlap statikus oldalon a [FormSubmit.co](https://formsubmit.co) ingyenes szolgáltatáson keresztül működik, saját szerver nélkül; az üzenetet a rendelő e-mail címére küldi.
+
+**Aktiválás (egyszeri, ingyenes):** az űrlap első elküldésekor a FormSubmit egy megerősítő e-mailt küld a `mislenyiallatorvos@gmail.com` címre – a benne lévő linkre kattintva élesedik, ezután minden üzenet megérkezik. A címzett bármikor átírható az `index.html`-ben a form `action` attribútumában. (Teszteléshez ideiglenesen a saját e-mail-címére is állíthatja.)
+
 ## Élesítés előtti teendők
 
 - A demóban ingyenes stockfotók (Unsplash) szerepelnek – éles indulás előtt érdemes lecserélni őket a rendelőről, a doktornőről és pácienseiről készült saját fotókra (`img/` mappa).
+- A kapcsolati űrlap FormSubmit-címzettjét aktiválni kell (lásd fent).
 - Az adatkezelési tájékoztatóban a tárhelyszolgáltató/üzemeltető adatait aktualizálni kell.
 - A `mislenyiallatorvos.hu` domain a jelenlegi szolgáltatótól elhozható és a GitHub Pages-hez (vagy más tárhelyhez) irányítható – ekkor ingyenes, automatikus HTTPS-t is kap.
 - Tartalommódosítás: a régi oldal „Belépés” funkcióját (Drupal admin) itt a HTML-fájlok szerkesztése váltja ki. Ha a doktornő maga szeretné szerkeszteni a tartalmat, később ráépíthető egy egyszerű CMS (pl. Decap CMS) vagy vállalható a szerkesztés „karbantartási” szolgáltatásként.

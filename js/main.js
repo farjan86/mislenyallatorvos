@@ -38,6 +38,39 @@
   }
 })();
 
+// Kapcsolati űrlap küldése (FormSubmit AJAX, oldalfrissítés nélkül)
+(function () {
+  var form = document.getElementById('cform');
+  if (!form) return;
+  var status = document.getElementById('cf-status');
+  var btn = form.querySelector('button[type="submit"]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form._honey && form._honey.value) return; // spam-csapda
+    var url = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+    status.className = 'form-status';
+    btn.disabled = true;
+    var label = btn.innerHTML;
+    btn.textContent = 'Küldés…';
+    fetch(url, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.success === true || data.success === 'true') {
+          form.reset();
+          status.className = 'form-status ok';
+          status.textContent = 'Köszönjük, üzenetét elküldtük! Hamarosan válaszolunk.';
+        } else {
+          throw new Error('nem sikerült');
+        }
+      })
+      .catch(function () {
+        status.className = 'form-status err';
+        status.innerHTML = 'Az üzenet küldése nem sikerült. Kérjük, írjon a <a href="mailto:mislenyiallatorvos@gmail.com">mislenyiallatorvos@gmail.com</a> címre, vagy telefonáljon.';
+      })
+      .then(function () { btn.disabled = false; btn.innerHTML = label; });
+  });
+})();
+
 // Finom megjelenés görgetésre
 (function () {
   var items = document.querySelectorAll('.reveal');
